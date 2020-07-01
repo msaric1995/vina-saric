@@ -1,6 +1,5 @@
 
 {
-  "start": "node server/server.js",
 
   "name": "node-react-starter",
   "version": "1.0.0",
