@@ -1,0 +1,220 @@
+.listaproizvoda{
+    display: block;
+    flex-direction:row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+
+}
+
+
+.proizvod{
+    padding: 3em 3em 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(160, 160, 160, 0.3);
+    border-image: initial;
+    margin: 1em 1em 1em;
+    background: rgb(248, 248, 248);
+    display: inline-block;;
+    width: 450px;
+
+}
+
+.proizvodTop{
+     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+     left: -3em;
+     margin: -3em 0 3em 0;
+     position: relative;
+     width: calc(100% + 6em);
+     background: #F8F8F8;
+     padding: 2.75em 2em 1.3em 2em;
+    }
+
+.proizvodNaslov{
+     letter-spacing: 0.15em;
+     text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+.proizvodText{
+      font-size: 0.7em;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      line-height: 2.5;
+      margin-top: -1em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+.detaljiProizvoda{
+     display: flex;
+      }
+
+.imagee{
+    /* width: 350px; */
+    margin-right: 20px;
+  
+  height: 300px;
+ }
+
+       
+ @media screen and (max-width: 980px) {   
+    .imagea{
+        width: 350px;
+    }
+ }
+
+        @media screen and (max-width: 800px)
+        {
+             .detaljiProizvoda{
+                display: initial;
+            }
+  
+                .imagea{
+                   margin-bottom: 10px;
+
+                        }
+    
+        }
+
+        
+
+.Back
+{
+    height: 450px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.Naslov_text{
+    text-align: center;
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.80);
+    transform: translate(0%,200%);
+    padding: 10px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.Naslov_text2{
+    text-align: center;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.80);
+    transform: translate(0%,200%);
+    padding: 17px;
+}
+
+.button{
+    cursor: pointer;
+    height: 3.5em;
+    text-transform: uppercase;
+    font-size: 0.725em;
+    border: 1px;
+    margin-left: 250px;
+    visibility: hidden;
+
+}
+
+.buttonVisible{
+    cursor: pointer;
+    height: 3.5em;
+    text-transform: uppercase;
+    font-size: 0.725em;
+    border: 1px;
+    margin-left: 250px;
+    visibility: visible;
+
+}
+
+.buttonKupi{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 2em;
+    border-width: 0ch;
+    background:  #c2a284;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-left: 13px;
+}
+
+
+.buttonMinusPlus{
+    background-color: transparent;
+    border-width: 0ch;
+    font-size: 25px;
+
+}
+
+.buttonUkloni{
+    box-sizing: border-box ;
+    display: inline-block;
+    padding: 0.4em 0.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 200px;
+    border: #c2a284;
+    border-width: 10px;
+    background: rgb(248, 248, 248);
+
+}
+
+.dodaniProizvodMinusPlus{
+    display: inline-flex;
+}
+.dodaniProizvod{
+    display: inline-flex;
+}
+
+
+.checkbox_label{
+    display: flex;  
+}
+
+.checkbox_l{
+    display: flex;
+    padding:10px;
+}
+
+.checkbox_2{
+    margin-top: 6px;
+}
+
+button.btn{
+    background-color: transparent;
+    border: 0;
+    box-shadow: inset 0 0 0 1px rgba(160, 160, 160, 0.3);
+    color: white !important;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    background:#c2a284;
+    height: 40px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.7em;
+    padding-top: 0.2em;
+
+}
+
+
+.filteri{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.7em;
+    padding-top: 0.2em;  
+}
+
