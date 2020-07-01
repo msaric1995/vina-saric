@@ -1,0 +1,41 @@
+
+{
+  "start": "node server/server.js",
+
+  "name": "node-react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",    
+    "build": "webpack" 
+  },
+  "author": " ",
+  "license": "",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "jsonwebtoken": "^7.4.2",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.44.4",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^1.0.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "concurrently": "^4.1.1",
+  }
+}
+
+
