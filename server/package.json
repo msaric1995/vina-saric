@@ -8,7 +8,7 @@
   "main": "index.js",
   "engines": {
     "node": "3.10.1"
-  }
+  },
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
