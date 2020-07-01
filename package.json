@@ -6,7 +6,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "3.10.1"
+    "node": "3.10.1",
+    "npm": "6.13.7"
   },
 
   "scripts": {
