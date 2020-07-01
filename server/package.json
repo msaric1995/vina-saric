@@ -1,12 +1,21 @@
+
 {
-  "name": "server.js",
+  "start": "node server/server.js",
+
+  "name": "node-react-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
+
+
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node src/server.js",
-  "build": "webpack" 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",    
+    "build": "webpack" 
   },
   "author": " ",
   "license": "",
@@ -24,6 +33,9 @@
     "node-sass": "^4.13.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "concurrently": "^4.1.1",
   }
 }
+
+
