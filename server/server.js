@@ -4,7 +4,7 @@ var bodyParser = require("body-parser")
 const app = express();
 
 var port = process.env.PORT || 5000;
-const publicPath = path.join(__dirname, '..', 'public');
+
 app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))
@@ -20,7 +20,6 @@ app.use('/kupnja', Kupnja)
 
 var Vina = require('./route/VinaRoute')
 app.use('/vina', Vina)
-app.use(express.static(publicPath));
 
 app.listen(port, ()=> {
  console.log("Server listening on port: " + port)
