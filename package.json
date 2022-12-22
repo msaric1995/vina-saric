@@ -22,7 +22,7 @@
     "bcrypt": "^3.0.0",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
-    "jsonwebtoken": "^7.4.2",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^1.6.1",
     "sequelize": "^4.44.4",
     "bootstrap": "^4.4.1",
